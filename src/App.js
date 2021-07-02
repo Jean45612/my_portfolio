@@ -1,16 +1,22 @@
-import { useState } from "react";
+import React, { useState } from "react";
 import Loading from "./components/Loading";
+import ReactPageScroller from 'react-page-scroller';
+import Header from "./views/Header";
+import Portafolio from "./views/Portafolio";
 
 function App() {
-  const [isLoading, setisLoading] = useState(true)
+  const [isLoading, setisLoading] = useState(true);
 
   if (isLoading) {
     return <Loading setisLoading={setisLoading} />
   } else {
     return (
-      <div className="App">
-
-      </div>
+      <React.Fragment>
+        <ReactPageScroller>
+          <Header />
+          <Portafolio />
+        </ReactPageScroller>
+      </React.Fragment>
     );
   }
 }

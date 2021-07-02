@@ -1,10 +1,11 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box; /* SIRVE PARA QUE AL APLICAR BORDERS O PADDINGS A LOS ELEMENTOS, ESTOS NO SOBRESALGAN DE LA CAJA */
 }
 
 body {
-  background-color: black !important;
+  /* background-color: black !important; */
 }
 
 .h-vh-100 {
@@ -17,4 +18,3 @@ body {
     url("./../../fonts/AvenueX/AvenueX-Regular.otf") format("truetype");
   font-weight: bold;
 }
-

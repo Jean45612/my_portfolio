@@ -13,8 +13,7 @@ const Loading = (props) => {
   return (
     <div className="loader">
       <div className="datos">
-        <p>Jean Pierre Acosta Tomaylla</p>
-        <p>Desarrollador Front-End</p>
+        <p>Hola mundo</p>
       </div>
     </div>
   );

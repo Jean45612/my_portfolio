@@ -1,0 +1,46 @@
+.v-header {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.video-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden; /*SIRVE PARA ELIMINAR EL CONTENIDO QUE SALE DE LA CAJA, OSEA DEL DIV */
+}
+
+.video-container video {
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.header-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: black;
+  z-index: 1;
+  opacity: 50%;
+}
+
+.header-content {
+  width: 100vw;
+  z-index: 2;
+  font-family: AvenueX;
+  font-size: 30px;
+}
+
+.header-content img {
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  margin-bottom: 10px;
+}
