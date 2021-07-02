@@ -44,3 +44,14 @@
   border-radius: 100%;
   margin-bottom: 10px;
 }
+
+.header-content{
+  transform: translateY(-100vh);
+  animation: fall 3.5s forwards; /* FORWARDS SIRVE PARA QUE LOS ESTILOS APLICADOS SE QUEDEN*/
+}
+
+@keyframes fall {
+  100% {
+    transform: translateY(0);
+  }
+}
