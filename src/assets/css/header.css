@@ -1,6 +1,7 @@
 .v-header {
   height: 100vh;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   color: white;
   text-align: center;
@@ -46,5 +47,5 @@
   height: 200px;
   border-radius: 100%;
   margin-bottom: 10px;
+  display: none;
 }
-

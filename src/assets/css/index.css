@@ -1,7 +1,18 @@
+:root {
+  --fondo-negro-humo: #1a1a1a;
+}
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box; /* SIRVE PARA QUE AL APLICAR BORDERS O PADDINGS A LOS ELEMENTOS, ESTOS NO SOBRESALGAN DE LA CAJA */
+}
+
+body {
+  /* background-color: #1c0d02 !important; */
+  background-image: url("../images/fondo.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .h-vh-100 {
@@ -41,5 +52,15 @@
 @keyframes fall {
   100% {
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 500px) {
+  .header-content img {
+    display: inline !important;
+  }
+
+  .acerca .acerca-container .foto {
+    display: none !important;
   }
 }

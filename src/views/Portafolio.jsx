@@ -2,7 +2,7 @@ import React from 'react'
 
 function Portafolio() {
     return (
-        <div>
+        <div className="text-white">
             portafolio
         </div>
     )

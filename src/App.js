@@ -4,8 +4,8 @@ import ReactPageScroller from 'react-page-scroller';
 import Header from "./views/Header";
 import Portafolio from "./views/Portafolio";
 import Nav from "./components/Nav";
-import Acerca from "./components/Acerca";
-import Contacto from "./components/Contacto";
+import Acerca from "./views/Acerca";
+import Contacto from "./views/Contacto";
 
 function App() {
   const [isLoading, setisLoading] = useState(true);
