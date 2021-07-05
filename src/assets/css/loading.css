@@ -8,10 +8,6 @@
 }
 
 .datos {
-  animation: fadein 5s;
-  -moz-animation: fadein 5s; /* Firefox */
-  -webkit-animation: fadein 5s; /* Safari and Chrome */
-  -o-animation: fadein 5s; /* Opera */
   opacity: 0;
 }
 
@@ -23,37 +19,6 @@
 }
 
 @keyframes fadein {
-  40% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-
-@-moz-keyframes fadein {
-  /* Firefox */
-  40% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-@-webkit-keyframes fadein {
-  /* Safari and Chrome */
-  40% {
-    opacity: 1;
-  }
-
-  100% {
-    opacity: 0;
-  }
-}
-@-o-keyframes fadein {
-  /* Opera */
   40% {
     opacity: 1;
   }

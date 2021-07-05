@@ -36,6 +36,9 @@
   z-index: 2;
   font-family: AvenueX;
   font-size: 30px;
+
+  transform: translateY(-100vh);
+  animation: fall 3.5s forwards; /* FORWARDS SIRVE PARA QUE LOS ESTILOS APLICADOS SE QUEDEN*/
 }
 
 .header-content img {
@@ -43,11 +46,6 @@
   height: 200px;
   border-radius: 100%;
   margin-bottom: 10px;
-}
-
-.header-content{
-  transform: translateY(-100vh);
-  animation: fall 3.5s forwards; /* FORWARDS SIRVE PARA QUE LOS ESTILOS APLICADOS SE QUEDEN*/
 }
 
 @keyframes fall {
