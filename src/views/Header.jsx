@@ -11,9 +11,16 @@ function Header() {
       </div>
       <div className="header-overlay"></div>
       <div className="header-content">
-        <img src={photo} alt="" />
-        <p>Jean Pierre Acosta</p>
-        <p>Desarrollador Front-end</p>
+        <div className="header-nav">
+          <label>Acerca de mí</label>
+          <label>Portafolio Web</label>
+          <label>Contáctame</label>
+        </div>
+        <div className="photo">
+          <img src={photo} alt="" />
+          <p>Jean Pierre Acosta</p>
+          <p>Desarrollador Front-end</p>
+        </div>
       </div>
     </header>
   );

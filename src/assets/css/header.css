@@ -1,9 +1,7 @@
 .v-header {
-  height: 100vh;
-  display: flex;
-  align-items: center;
   color: white;
   text-align: center;
+  font-family: AvenueX;
 }
 
 .video-container {
@@ -33,8 +31,15 @@
 
 .header-content {
   width: 100vw;
+  height: 70vh;
+  position: relative;
   z-index: 2;
-  font-family: AvenueX;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.header-content .photo {
   font-size: 30px;
 
   transform: translateY(-100vh);
