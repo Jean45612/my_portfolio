@@ -1,23 +1,21 @@
 import React from "react";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 function Nav(props) {
-  const acerca = () => {
-    props.handlePageChange(1);
+  const scrollToTop = () => {
+    scroll.scrollToTop();
   };
-
-  const portafolio = () => {
-    props.handlePageChange(2);
-  };
-
-  const contactame = () => {
-    props.handlePageChange(3);
-  };
-
   return (
     <div className="header-nav">
-      <label onClick={acerca}>Acerca de mí</label>
-      <label onClick={portafolio}>| Portafolio Web</label>
-      <label onClick={contactame}>| Contáctame</label>
+      <Link to="acerca" spy={true} smooth={true} duration={500}>
+        Acerca de mí
+      </Link>
+      <Link to="portafolio" spy={true} smooth={true} duration={500}>
+        | Portafolio Web
+      </Link>
+      <Link to="contactame" spy={true} smooth={true} duration={500}>
+        | Contáctame
+      </Link>
     </div>
   );
 }

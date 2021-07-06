@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Contacto() {
-    return (
-        <div>
-            Contactame
-        </div>
-    )
+  return (
+    <div className="text-white" id="contactame">
+      Contactame
+    </div>
+  );
 }
 
-export default Contacto
+export default Contacto;

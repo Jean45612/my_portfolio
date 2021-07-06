@@ -36,7 +36,7 @@ function ToolComponent(props) {
 
 function Acerca() {
   return (
-    <div className="acerca container">
+    <div className="acerca container" id="acerca">
       <div className="acerca-container row">
         <div className="col-md-7">
           <h2 className="text-center">Hola, mi nombre es Jean Pierre Acosta</h2>

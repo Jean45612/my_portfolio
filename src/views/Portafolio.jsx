@@ -1,11 +1,11 @@
-import React from 'react'
+import React from "react";
 
 function Portafolio() {
-    return (
-        <div className="text-white">
-            portafolio
-        </div>
-    )
+  return (
+    <div className="text-white" id="portafolio">
+      portafolio
+    </div>
+  );
 }
 
-export default Portafolio
+export default Portafolio;

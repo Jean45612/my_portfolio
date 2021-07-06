@@ -1,6 +1,5 @@
 .acerca {
   color: white;
-  padding-top: 60px;
 }
 
 .acerca .acerca-container {
@@ -41,6 +40,11 @@
   padding: 2px;
 }
 
+@media (min-width: 576px) {
+  .acerca {
+    padding-top: 50px;
+  }
+}
 @media (max-width: 768px) {
   .acerca .habilidades img {
     width: 50px;

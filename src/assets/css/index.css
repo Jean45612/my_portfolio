@@ -38,15 +38,16 @@ body {
   animation: fall 3.5s forwards;
 }
 
-.header-nav label {
+.header-nav a {
   margin: 5px;
   font-weight: bold;
   font-family: AvenueX;
   font-size: 20px;
 }
 
-.header-nav label:hover {
+.header-nav a:hover {
   cursor: pointer;
+  text-decoration: none;
 }
 
 @keyframes fall {
