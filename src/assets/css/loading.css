@@ -7,11 +7,11 @@
   background-color: var(--fondo-negro-humo);
 }
 
-.datos {
+.loader .datos {
   opacity: 0;
 }
 
-.datos p {
+.loader .datos p {
   font-weight: bold;
   color: white;
   font-family: AvenueX;

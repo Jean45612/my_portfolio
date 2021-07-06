@@ -11,6 +11,10 @@ import imgAngular from "./../assets/images/habilidades/angular.png";
 import imgVue from "./../assets/images/habilidades/vue.png";
 import imgReact from "./../assets/images/habilidades/react.png";
 import photo from "./../assets/images/photo.jpeg";
+import imgCV from "./../assets/images/informacion/cv.png";
+import imgLinkedin from "./../assets/images/informacion/linkedin.png";
+import imgGithub from "./../assets/images/informacion/github.png";
+import imgCorreo from "./../assets/images/informacion/correo.png";
 
 function ToolComponent(props) {
   return (
@@ -19,7 +23,13 @@ function ToolComponent(props) {
       delay={{ show: 250, hide: 400 }}
       overlay={<Tooltip id="button-tooltip">{props.name}</Tooltip>}
     >
-      <img src={props.img} alt="" />
+      {props.link ? (
+        <a href={props.link} target="_blank" rel="noreferrer">
+          <img src={props.img} alt=""/>
+        </a>
+      ) : (
+        <img src={props.img} alt="" />
+      )}
     </OverlayTrigger>
   );
 }
@@ -54,6 +64,30 @@ function Acerca() {
             <ToolComponent name="Angular" img={imgAngular}></ToolComponent>
             <ToolComponent name="Vue" img={imgVue}></ToolComponent>
             <ToolComponent name="React" img={imgReact}></ToolComponent>
+          </div>
+          <br />
+          <div className="informacion">
+            <h5>Más informacion</h5>
+            <ToolComponent
+              name="CV"
+              img={imgCV}
+              link="https://drive.google.com/file/d/1jK9poohSrQMPdu4TZCqoZPckOe-QWSaE/view"
+            ></ToolComponent>
+            <ToolComponent
+              name="LinkedIn"
+              img={imgLinkedin}
+              link="https://www.linkedin.com/in/jp-acosta"
+            ></ToolComponent>
+            <ToolComponent
+              name="Github"
+              img={imgGithub}
+              link="https://github.com/Jean45612"
+            ></ToolComponent>
+            <ToolComponent
+              name="Contacto"
+              img={imgCorreo}
+              link="mailto:jpacostatomaylla@gmail.com"
+            ></ToolComponent>
           </div>
         </div>
 

@@ -8,7 +8,7 @@
   font-family: AvenueX;
 }
 
-.video-container {
+.v-header .video-container {
   position: absolute;
   top: 0;
   left: 0;
@@ -17,12 +17,12 @@
   overflow: hidden; /*SIRVE PARA ELIMINAR EL CONTENIDO QUE SALE DE LA CAJA, OSEA DEL DIV */
 }
 
-.video-container video {
+.v-header .video-container video {
   min-width: 100%;
   min-height: 100%;
 }
 
-.header-overlay {
+.v-header .header-overlay {
   height: 100vh;
   width: 100vw;
   position: absolute;
@@ -33,7 +33,7 @@
   opacity: 50%;
 }
 
-.header-content {
+.v-header .header-content {
   width: 100vw;
   z-index: 2;
   font-size: 30px;
@@ -42,7 +42,7 @@
   animation: fall 3.5s forwards; /* FORWARDS SIRVE PARA QUE LOS ESTILOS APLICADOS SE QUEDEN*/
 }
 
-.header-content img {
+.v-header .header-content img {
   width: 200px;
   height: 200px;
   border-radius: 100%;

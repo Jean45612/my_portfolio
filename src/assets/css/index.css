@@ -55,7 +55,7 @@ body {
   }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 768px) {
   .header-content img {
     display: inline !important;
   }

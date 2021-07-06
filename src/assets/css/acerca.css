@@ -1,6 +1,6 @@
 .acerca {
   color: white;
-  padding-top: 70px;
+  padding-top: 60px;
 }
 
 .acerca .acerca-container {
@@ -13,19 +13,43 @@
   width: 300px;
   height: 300px;
   border-radius: 100%;
+  max-width: 100%; /*ESTO LO PONGO PARA QUE NO SOBRESALGA DEL DIV PADRE Y NO SE VEA FEO*/
 }
 
 .acerca .habilidades {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto; /* CON ESTO CENTRO EL CAJON */
 }
 
 .acerca .habilidades img {
-  width: 70px;
-  height: 70px;
+  width: 60px;
+  height: 60px;
   cursor: pointer;
   margin: 6px;
 }
 
+.acerca .informacion img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  background: white;
+  border-radius: 0.25rem;
+  margin: 0px 5px;
+  padding: 2px;
+}
 
+@media (max-width: 768px) {
+  .acerca .habilidades img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 992px) {
+  .acerca .habilidades {
+    width: 100%;
+  }
+}
