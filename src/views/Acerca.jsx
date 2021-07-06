@@ -34,11 +34,11 @@ function ToolComponent(props) {
   );
 }
 
-function Acerca() {
+const Acerca = () => {
   return (
     <div className="acerca container" id="acerca">
       <div className="acerca-container row">
-        <div className="col-md-7">
+        <div className="col-md-7" data-aos="fade-right">
           <h2 className="text-center">Hola, mi nombre es Jean Pierre Acosta</h2>
           <p className="text-justify">
             Soy egresado de la carrera de Ingeniería de Sistemas en la
@@ -91,12 +91,15 @@ function Acerca() {
           </div>
         </div>
 
-        <div className="col-md-5 d-flex align-items-center justify-content-center">
+        <div
+          className="col-md-5 d-flex align-items-center justify-content-center"
+          data-aos="fade-left"
+        >
           <img src={photo} alt="" className="foto" loading="lazy" />
         </div>
       </div>
     </div>
   );
-}
+};
 
 export default Acerca;

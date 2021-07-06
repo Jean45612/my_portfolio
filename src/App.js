@@ -5,9 +5,15 @@ import Portafolio from "./views/Portafolio";
 import Nav from "./components/Nav";
 import Acerca from "./views/Acerca";
 import Contacto from "./views/Contacto";
+import { useEffect } from "react";
+import Aos from "aos"; //LIBRERIA PARA ANIMACIONES EN EL SCROLL//
 
 function App() {
   const [isLoading, setisLoading] = useState(true);
+  
+  useEffect(() => {
+    Aos.init({ duration: 1000 }); //INICIALIZO LA ANIMACION//
+  });
 
   if (isLoading) {
     return <Loading setisLoading={setisLoading} />

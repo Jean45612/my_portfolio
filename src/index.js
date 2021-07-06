@@ -5,6 +5,7 @@ import App from './App';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './fonts/Amattera/Amattera-Million.ttf';
 import './fonts/AvenueX/AvenueX-Regular.otf';
+import 'aos/dist/aos.css';
 
 ReactDOM.render(
   <React.StrictMode>
