@@ -1,10 +1,11 @@
 import React from "react";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 function Nav(props) {
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
+  // const scrollToTop = () => {
+  //   scroll.scrollToTop();
+  // };
+
   return (
     <div className="header-nav">
       <Link to="acerca" spy={true} smooth={true} duration={500}>

@@ -25,10 +25,10 @@ function ToolComponent(props) {
     >
       {props.link ? (
         <a href={props.link} target="_blank" rel="noreferrer">
-          <img src={props.img} alt=""/>
+          <img src={props.img} alt="" loading="lazy" />
         </a>
       ) : (
-        <img src={props.img} alt="" />
+        <img src={props.img} alt="" loading="lazy" />
       )}
     </OverlayTrigger>
   );
@@ -92,7 +92,7 @@ function Acerca() {
         </div>
 
         <div className="col-md-5 d-flex align-items-center justify-content-center">
-          <img src={photo} alt="" className="foto" />
+          <img src={photo} alt="" className="foto" loading="lazy" />
         </div>
       </div>
     </div>

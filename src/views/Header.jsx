@@ -11,7 +11,7 @@ function Header() {
       </div>
       <div className="header-overlay"></div>
       <div className="header-content">
-        <img src={photo} alt="" />
+        <img src={photo} alt="" loading="lazy" />
         <p>Jean Pierre Acosta</p>
         <p>Desarrollador Front-end</p>
       </div>
