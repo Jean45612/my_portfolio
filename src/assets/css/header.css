@@ -34,9 +34,9 @@
 }
 
 .v-header .header-content {
-  width: 100vw;
+  width: 100%;
   z-index: 2;
-  font-size: 30px;
+  font-size: 1.875rem;
 
   transform: translateY(-100vh);
   animation: fall 3.5s forwards; /* FORWARDS SIRVE PARA QUE LOS ESTILOS APLICADOS SE QUEDEN*/

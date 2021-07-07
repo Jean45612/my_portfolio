@@ -1,4 +1,7 @@
-:root { /* AQUI ESTOY USANDO VARIABLES CSS*/
+/*EN LAS UNIDADES EM Y REM EL NAVEGADOR POR DEFECTO TE ASIGNA 16PX*/
+
+:root {
+  /* AQUI ESTOY USANDO VARIABLES CSS*/
   --fondo-negro-humo: #1a1a1a;
 }
 
@@ -42,7 +45,7 @@ body {
   margin: 5px;
   font-weight: bold;
   font-family: AvenueX;
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 
 .header-nav a:hover {
@@ -51,8 +54,26 @@ body {
 }
 
 @keyframes fall {
+  0% {
+    opacity: 0;
+  }
+
   100% {
+    opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media (max-width: 576px) {
+  /* AQUI LE BAJAMOS EL TAMAÑO AL FONT SIZE DEL ROOT PARA QUE LAS UNIDADES REM CAMBIEN*/
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 577px) and (max-width: 768px) {
+  html {
+    font-size: 15px;
   }
 }
 

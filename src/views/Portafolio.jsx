@@ -1,6 +1,6 @@
 import React from "react";
 import Slider from "infinite-react-carousel";
-import imgPrueba from "./../assets/images/portafolio/prueba.jpeg";
+// import imgPrueba from "./../assets/images/portafolio/prueba.jpeg";
 
 function Portafolio() {
   const settings = {
@@ -17,7 +17,7 @@ function Portafolio() {
     <div id="portafolio">
       <Slider {...settings}>
         <div>
-          <img src={imgPrueba} alt="" loading="lazy"/>
+          {/* <img src={imgPrueba} alt="" loading="lazy"/> */}
         </div>
         <div>
           <h3>2</h3>
