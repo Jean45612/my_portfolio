@@ -1,0 +1,15 @@
+#portafolio {
+  padding-top: 1.25rem;
+  background-color: var(--blanco-secundario);
+}
+
+#portafolio img {
+  height: 100%;
+  padding: 0;
+}
+
+@media (min-width: 576px) {
+  #portafolio {
+    margin-top: 3.125rem;
+  }
+}

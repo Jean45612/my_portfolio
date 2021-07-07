@@ -1,52 +1,67 @@
 import React from "react";
-import Slider from "infinite-react-carousel";
-// import imgPrueba from "./../assets/images/portafolio/prueba.jpeg";
+import "../assets/css/portafolio.css";
+
+import imgEncuestas from "./../assets/images/portafolio/encuestas/encuestas.PNG";
+import imgHistoria from "./../assets/images/portafolio/historia_clinica/paciente.PNG";
+import imgProducto from "./../assets/images/portafolio/logistico/producto.PNG";
+import imgPedido from "./../assets/images/portafolio/pedidos/pedido.PNG";
+import imgProyecto from "./../assets/images/portafolio/proyectos/tarea.PNG";
+import imgTarjetas from "./../assets/images/portafolio/tarjetas/tar1.PNG";
 
 function Portafolio() {
-  const settings = {
-    autoplay: true,
-    autoplaySpeed: 4000,
-    centerMode: true,
-    centerPadding: 40,
-    duration: 500,
-    overScan: 1,
-    rows: 2,
-    slidesToShow: 4,
-  };
   return (
     <div id="portafolio">
-      <Slider {...settings}>
-        <div>
-          {/* <img src={imgPrueba} alt="" loading="lazy"/> */}
-        </div>
-        <div>
-          <h3>2</h3>
-        </div>
-        <div>
-          <h3>3</h3>
-        </div>
-        <div>
-          <h3>4</h3>
-        </div>
-        <div>
-          <h3>5</h3>
-        </div>
-        <div>
-          <h3>6</h3>
-        </div>
-        <div>
-          <h3>7</h3>
-        </div>
-        <div>
-          <h3>8</h3>
-        </div>
-        <div>
-          <h3>9</h3>
-        </div>
-        <div>
-          <h3>10</h3>
-        </div>
-      </Slider>
+      <h3 className="text-center">Portafolio</h3>
+      <div className="row mt-4 mx-0">
+        <img
+          className="col-lg-4 col-sm-6 "
+          src={imgEncuestas}
+          alt=""
+          loading="lazy"
+          data-aos="zoom-in"
+          data-aos-duration="500"
+        />
+        <img
+          className="col-lg-4 col-sm-6"
+          src={imgHistoria}
+          alt=""
+          loading="lazy"
+          data-aos="zoom-in"
+          data-aos-duration="500"
+        />
+        <img
+          className="col-lg-4 col-sm-6"
+          src={imgProducto}
+          alt=""
+          loading="lazy"
+          data-aos="zoom-in"
+          data-aos-duration="500"
+        />
+        <img
+          className="col-lg-4 col-sm-6"
+          src={imgTarjetas}
+          alt=""
+          loading="lazy"
+          data-aos="zoom-in"
+          data-aos-duration="500"
+        />
+        <img
+          className="col-lg-4 col-sm-6"
+          src={imgProyecto}
+          alt=""
+          loading="lazy"
+          data-aos="zoom-in"
+          data-aos-duration="500"
+        />
+        <img
+          className="col-lg-4 col-sm-6"
+          src={imgPedido}
+          alt=""
+          loading="lazy"
+          data-aos="zoom-in"
+          data-aos-duration="500"
+        />
+      </div>
     </div>
   );
 }

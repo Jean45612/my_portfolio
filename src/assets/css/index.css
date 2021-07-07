@@ -3,6 +3,7 @@
 :root {
   /* AQUI ESTOY USANDO VARIABLES CSS*/
   --fondo-negro-humo: #1a1a1a;
+  --blanco-secundario: #F5F5F5;
 }
 
 * {
