@@ -1,30 +1,36 @@
 [
   {
+    "id": "1",
     "nombre": "Encuestas",
     "descripcion": "Angular / Laravel",
-    "imagen": "./../assets/images/portafolio/encuestas/encuestas.PNG"
+    "imagen": "encuestas/encuestas.PNG"
   },
   {
+    "id": "2",
     "nombre": "Historia clínica",
     "descripcion": "Laravel",
     "imagen": "historia_clinica/paciente.PNG"
   },
   {
+    "id": "3",
     "nombre": "Sistema logístico",
     "descripcion": "Vue / Laravel",
     "imagen": "logistico/producto.PNG"
   },
   {
+    "id": "4",
     "nombre": "Tarjetas digitales",
     "descripcion": "Angular / Laravel",
     "imagen": "tarjetas/tar1.PNG"
   },
   {
+    "id": "5",
     "nombre": "Gestión de proyectos",
     "descripcion": "Vue / Laravel",
     "imagen": "proyectos/tarea.PNG"
   },
   {
+    "id": "6",
     "nombre": "Pedidos",
     "descripcion": "Angular / Laravel",
     "imagen": "pedidos/pedido.PNG"
