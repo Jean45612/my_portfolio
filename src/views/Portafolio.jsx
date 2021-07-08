@@ -13,54 +13,71 @@ function Portafolio() {
     <div id="portafolio">
       <h3 className="text-center">Portafolio</h3>
       <div className="row mt-4 mx-0">
-        <img
-          className="col-lg-4 col-sm-6 "
-          src={imgEncuestas}
-          alt=""
-          loading="lazy"
-          data-aos="zoom-in"
-          data-aos-duration="500"
-        />
-        <img
-          className="col-lg-4 col-sm-6"
-          src={imgHistoria}
-          alt=""
-          loading="lazy"
-          data-aos="zoom-in"
-          data-aos-duration="500"
-        />
-        <img
-          className="col-lg-4 col-sm-6"
-          src={imgProducto}
-          alt=""
-          loading="lazy"
-          data-aos="zoom-in"
-          data-aos-duration="500"
-        />
-        <img
-          className="col-lg-4 col-sm-6"
-          src={imgTarjetas}
-          alt=""
-          loading="lazy"
-          data-aos="zoom-in"
-          data-aos-duration="500"
-        />
-        <img
-          className="col-lg-4 col-sm-6"
-          src={imgProyecto}
-          alt=""
-          loading="lazy"
-          data-aos="zoom-in"
-          data-aos-duration="500"
-        />
-        <img
-          className="col-lg-4 col-sm-6"
-          src={imgPedido}
-          alt=""
-          loading="lazy"
-          data-aos="zoom-in"
-          data-aos-duration="500"
-        />
+        <div className="col-lg-4 col-sm-6 proyecto">
+          <img
+            src={imgEncuestas}
+            alt=""
+            loading="lazy"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+          />
+          <div className="text-image">ESTE ES EL TEXTO :D</div>
+        </div>
+
+        <div className="col-lg-4 col-sm-6 proyecto">
+          <img
+            src={imgHistoria}
+            alt=""
+            loading="lazy"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+          />
+          <div className="text-image">ESTE ES EL TEXTO :D</div>
+        </div>
+
+        <div className="col-lg-4 col-sm-6 proyecto">
+          <img
+            src={imgProducto}
+            alt=""
+            loading="lazy"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+          />
+          <div className="text-image">ESTE ES EL TEXTO :D</div>
+        </div>
+
+        <div className="col-lg-4 col-sm-6 proyecto">
+          <img
+            src={imgTarjetas}
+            alt=""
+            loading="lazy"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+          />
+          <div className="text-image">ESTE ES EL TEXTO :D</div>
+        </div>
+
+        <div className="col-lg-4 col-sm-6 proyecto">
+          <img
+            src={imgProyecto}
+            alt=""
+            loading="lazy"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+          />
+          <div className="text-image">ESTE ES EL TEXTO :D</div>
+        </div>
+
+        <div className="col-lg-4 col-sm-6 proyecto">
+          <img
+            src={imgPedido}
+            alt=""
+            loading="lazy"
+            data-aos="zoom-in"
+            data-aos-duration="500"
+          />
+          <div className="text-image">ESTE ES EL TEXTO :D</div>
+        </div>
       </div>
     </div>
   );
