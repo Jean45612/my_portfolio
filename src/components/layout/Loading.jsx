@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 
-import "../assets/css/loading.css";
+import "../../assets/css/loading.css";
 
 const Loading = (props) => {
   const duration = 5;

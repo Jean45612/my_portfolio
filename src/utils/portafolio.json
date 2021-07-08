@@ -1,0 +1,32 @@
+[
+  {
+    "nombre": "Encuestas",
+    "descripcion": "Angular / Laravel",
+    "imagen": "./../assets/images/portafolio/encuestas/encuestas.PNG"
+  },
+  {
+    "nombre": "Historia clínica",
+    "descripcion": "Laravel",
+    "imagen": "historia_clinica/paciente.PNG"
+  },
+  {
+    "nombre": "Sistema logístico",
+    "descripcion": "Vue / Laravel",
+    "imagen": "logistico/producto.PNG"
+  },
+  {
+    "nombre": "Tarjetas digitales",
+    "descripcion": "Angular / Laravel",
+    "imagen": "tarjetas/tar1.PNG"
+  },
+  {
+    "nombre": "Gestión de proyectos",
+    "descripcion": "Vue / Laravel",
+    "imagen": "proyectos/tarea.PNG"
+  },
+  {
+    "nombre": "Pedidos",
+    "descripcion": "Angular / Laravel",
+    "imagen": "pedidos/pedido.PNG"
+  }
+]

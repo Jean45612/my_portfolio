@@ -1,7 +1,7 @@
 import React from "react";
-import video from "./../assets/videos/fondo.mov";
-import "./../assets/css/header.css";
-import photo from "./../assets/images/photo.jpeg";
+import video from "../../assets/videos/fondo.mov";
+import "../../assets/css/header.css";
+import photo from "../../assets/images/photo.jpeg";
 
 function Header() {
   return (

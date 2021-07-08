@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Loading from "./components/Loading";
-import Header from "./views/Header";
-import Portafolio from "./views/Portafolio";
-import Nav from "./components/Nav";
-import Acerca from "./views/Acerca";
-import Contacto from "./views/Contacto";
+import Loading from "./components/layout/Loading";
+import Header from "./components/views/Header";
+import Portafolio from "./components/views/Portafolio";
+import Nav from "./components/layout/Nav";
+import Acerca from "./components/views/Acerca";
+import Contacto from "./components/views/Contacto";
 import { useEffect } from "react";
 import Aos from "aos"; //LIBRERIA PARA ANIMACIONES EN EL SCROLL//
 
@@ -20,7 +20,7 @@ function App() {
   } else {
     return (
       <React.Fragment>
-        <Nav></Nav>
+        <Nav/>
         <Header />
         <Acerca />
         <Portafolio />

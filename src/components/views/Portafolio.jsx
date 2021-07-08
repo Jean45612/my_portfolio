@@ -1,19 +1,43 @@
 import React from "react";
-import "../assets/css/portafolio.css";
+import { useState } from "react";
+import "../../assets/css/portafolio.css";
+import ModalPortafolio from "../../components/common/ModalPortafolio";
+import proyectos from "../../utils/portafolio.json";
 
-import imgEncuestas from "./../assets/images/portafolio/encuestas/encuestas.PNG";
-import imgHistoria from "./../assets/images/portafolio/historia_clinica/paciente.PNG";
-import imgProducto from "./../assets/images/portafolio/logistico/producto.PNG";
-import imgPedido from "./../assets/images/portafolio/pedidos/pedido.PNG";
-import imgProyecto from "./../assets/images/portafolio/proyectos/tarea.PNG";
-import imgTarjetas from "./../assets/images/portafolio/tarjetas/tar1.PNG";
+import imgEncuestas from "../../assets/images/portafolio/encuestas/encuestas.PNG";
+import imgHistoria from "../../assets/images/portafolio/historia_clinica/paciente.PNG";
+import imgProducto from "../../assets/images/portafolio/logistico/producto.PNG";
+import imgPedido from "../../assets/images/portafolio/pedidos/pedido.PNG";
+import imgProyecto from "../../assets/images/portafolio/proyectos/tarea.PNG";
+import imgTarjetas from "../../assets/images/portafolio/tarjetas/tar1.PNG";
 
 function Portafolio() {
+  const [showModal, setShowModal] = useState(false);
+
+  const handleShow = () => setShowModal(true);
+
   return (
     <div id="portafolio">
       <h3 className="text-center">Portafolio</h3>
       <div className="row mt-4 mx-0">
-        <div className="col-lg-4 col-sm-6 proyecto">
+        {/* {proyectos.map((p) => {
+          return (
+            <div className="col-lg-4 col-sm-6 proyecto" onClick={handleShow}>
+              <img
+                src={p.imagen}
+                alt=""
+                loading="lazy"
+                data-aos="zoom-in"
+                data-aos-duration="500"
+              />
+              <div className="text-image">
+                <h4>{p.nombre}</h4>
+                <h5>{p.descripcion}</h5>
+              </div>
+            </div>
+          );
+        })} */}
+        <div className="col-lg-4 col-sm-6 proyecto" onClick={handleShow}>
           <img
             src={imgEncuestas}
             alt=""
@@ -27,7 +51,7 @@ function Portafolio() {
           </div>
         </div>
 
-        <div className="col-lg-4 col-sm-6 proyecto">
+        <div className="col-lg-4 col-sm-6 proyecto" onClick={handleShow}>
           <img
             src={imgHistoria}
             alt=""
@@ -41,7 +65,7 @@ function Portafolio() {
           </div>
         </div>
 
-        <div className="col-lg-4 col-sm-6 proyecto">
+        <div className="col-lg-4 col-sm-6 proyecto" onClick={handleShow}>
           <img
             src={imgProducto}
             alt=""
@@ -55,7 +79,7 @@ function Portafolio() {
           </div>
         </div>
 
-        <div className="col-lg-4 col-sm-6 proyecto">
+        <div className="col-lg-4 col-sm-6 proyecto" onClick={handleShow}>
           <img
             src={imgTarjetas}
             alt=""
@@ -69,7 +93,7 @@ function Portafolio() {
           </div>
         </div>
 
-        <div className="col-lg-4 col-sm-6 proyecto">
+        <div className="col-lg-4 col-sm-6 proyecto" onClick={handleShow}>
           <img
             src={imgProyecto}
             alt=""
@@ -83,7 +107,7 @@ function Portafolio() {
           </div>
         </div>
 
-        <div className="col-lg-4 col-sm-6 proyecto">
+        <div className="col-lg-4 col-sm-6 proyecto" onClick={handleShow}>
           <img
             src={imgPedido}
             alt=""
@@ -92,11 +116,12 @@ function Portafolio() {
             data-aos-duration="500"
           />
           <div className="text-image">
-            <h4>Encuestas</h4>
+            <h4>Pedidos</h4>
             <h5>Angular / Laravel</h5>
           </div>
         </div>
       </div>
+      <ModalPortafolio showModal={showModal} setShowModal={setShowModal} />
     </div>
   );
 }

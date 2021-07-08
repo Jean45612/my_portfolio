@@ -27,7 +27,7 @@ body {
 @font-face {
   font-family: "AvenueX";
   src: local("AvenueX"),
-    url("./../../fonts/AvenueX/AvenueX-Regular.otf") format("truetype");
+    url("./../../assets/fonts/AvenueX/AvenueX-Regular.otf") format("truetype");
   font-weight: bold;
 }
 

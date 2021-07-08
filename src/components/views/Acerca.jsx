@@ -1,20 +1,20 @@
 import React from "react";
-import "../assets/css/acerca.css";
+import "../../assets/css/acerca.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
-import imgHtml from "./../assets/images/habilidades/html.png";
-import imgCss from "./../assets/images/habilidades/css.png";
-import imgJavascript from "./../assets/images/habilidades/javascript.png";
-import imgPhp from "./../assets/images/habilidades/php.png";
-import imgLaravel from "./../assets/images/habilidades/laravel.png";
-import imgAngular from "./../assets/images/habilidades/angular.png";
-import imgVue from "./../assets/images/habilidades/vue.png";
-import imgReact from "./../assets/images/habilidades/react.png";
-import photo from "./../assets/images/photo.jpeg";
-import imgCV from "./../assets/images/informacion/cv.png";
-import imgLinkedin from "./../assets/images/informacion/linkedin.png";
-import imgGithub from "./../assets/images/informacion/github.png";
-import imgCorreo from "./../assets/images/informacion/correo.png";
+import imgHtml from "../../assets/images/habilidades/html.png";
+import imgCss from "../../assets/images/habilidades/css.png";
+import imgJavascript from "../../assets/images/habilidades/javascript.png";
+import imgPhp from "../../assets/images/habilidades/php.png";
+import imgLaravel from "../../assets/images/habilidades/laravel.png";
+import imgAngular from "../../assets/images/habilidades/angular.png";
+import imgVue from "../../assets/images/habilidades/vue.png";
+import imgReact from "../../assets/images/habilidades/react.png";
+import photo from "../../assets/images/photo.jpeg";
+import imgCV from "../../assets/images/informacion/cv.png";
+import imgLinkedin from "../../assets/images/informacion/linkedin.png";
+import imgGithub from "../../assets/images/informacion/github.png";
+import imgCorreo from "../../assets/images/informacion/correo.png";
 
 function ToolComponent(props) {
   return (
