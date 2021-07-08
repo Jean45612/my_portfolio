@@ -21,7 +21,10 @@ function Portafolio() {
             data-aos="zoom-in"
             data-aos-duration="500"
           />
-          <div className="text-image">ESTE ES EL TEXTO :D</div>
+          <div className="text-image">
+            <h4>Encuestas</h4>
+            <h5>Angular / Laravel</h5>
+          </div>
         </div>
 
         <div className="col-lg-4 col-sm-6 proyecto">
@@ -32,7 +35,10 @@ function Portafolio() {
             data-aos="zoom-in"
             data-aos-duration="500"
           />
-          <div className="text-image">ESTE ES EL TEXTO :D</div>
+          <div className="text-image">
+            <h4>Historia clínica</h4>
+            <h5>Laravel</h5>
+          </div>
         </div>
 
         <div className="col-lg-4 col-sm-6 proyecto">
@@ -43,7 +49,10 @@ function Portafolio() {
             data-aos="zoom-in"
             data-aos-duration="500"
           />
-          <div className="text-image">ESTE ES EL TEXTO :D</div>
+          <div className="text-image">
+            <h4>Sistema logístico</h4>
+            <h5>Vue / Laravel</h5>
+          </div>
         </div>
 
         <div className="col-lg-4 col-sm-6 proyecto">
@@ -54,7 +63,10 @@ function Portafolio() {
             data-aos="zoom-in"
             data-aos-duration="500"
           />
-          <div className="text-image">ESTE ES EL TEXTO :D</div>
+          <div className="text-image">
+            <h4>Tarjetas digitales</h4>
+            <h5>Angular / Laravel</h5>
+          </div>
         </div>
 
         <div className="col-lg-4 col-sm-6 proyecto">
@@ -65,7 +77,10 @@ function Portafolio() {
             data-aos="zoom-in"
             data-aos-duration="500"
           />
-          <div className="text-image">ESTE ES EL TEXTO :D</div>
+          <div className="text-image">
+            <h4>Gestión de proyectos</h4>
+            <h5>Vue / Laravel</h5>
+          </div>
         </div>
 
         <div className="col-lg-4 col-sm-6 proyecto">
@@ -76,7 +91,10 @@ function Portafolio() {
             data-aos="zoom-in"
             data-aos-duration="500"
           />
-          <div className="text-image">ESTE ES EL TEXTO :D</div>
+          <div className="text-image">
+            <h4>Encuestas</h4>
+            <h5>Angular / Laravel</h5>
+          </div>
         </div>
       </div>
     </div>
