@@ -2,13 +2,13 @@ import React from "react";
 import { Button, Modal } from "react-bootstrap";
 
 const ModalPortafolio = (props) => {
-  const handleClose = () => (props.setShowModal(false));
+  const handleClose = () => props.setShowModal(false);
 
   return (
     <div>
       <Modal show={props.showModal} onHide={handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>{props.proyecto.nombre}</Modal.Title>
         </Modal.Header>
         <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
         <Modal.Footer>

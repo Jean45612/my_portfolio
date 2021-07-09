@@ -9,18 +9,25 @@ import { useEffect } from "react";
 import Aos from "aos"; //LIBRERIA PARA ANIMACIONES EN EL SCROLL//
 
 function App() {
-  const [isLoading, setisLoading] = useState(true);
-  
+  const [isLoading, setIsLoading] = useState(true);
+  const durationLoading = 5;
+
   useEffect(() => {
     Aos.init({ duration: 1000 }); //INICIALIZO LA ANIMACION//
+  }, []);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoading(false);
+    }, durationLoading * 1000);
   });
 
   if (isLoading) {
-    return <Loading setisLoading={setisLoading} />
+    return <Loading duration={durationLoading} />
   } else {
     return (
       <React.Fragment>
-        <Nav/>
+        <Nav />
         <Header />
         <Acerca />
         <Portafolio />

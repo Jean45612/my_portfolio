@@ -6,8 +6,12 @@ import proyectos from "../../utils/portafolio.json";
 
 function Portafolio() {
   const [showModal, setShowModal] = useState(false);
+  const [proyecto, setProyecto] = useState({ nombre: null });
 
-  const handleShow = () => setShowModal(true);
+  const handleShow = (id) => {
+    setProyecto(proyectos.find((p) => p.id === id));
+    setShowModal(true);
+  };
 
   const requestImageFile = require.context(
     "../../assets/images/portafolio",
@@ -22,7 +26,7 @@ function Portafolio() {
           return (
             <div
               className="col-lg-4 col-sm-6 proyecto"
-              onClick={handleShow}
+              onClick={() => handleShow(p.id)}
               key={p.id}
             >
               <img
@@ -40,7 +44,11 @@ function Portafolio() {
           );
         })}
       </div>
-      <ModalPortafolio showModal={showModal} setShowModal={setShowModal} />
+      <ModalPortafolio
+        showModal={showModal}
+        setShowModal={setShowModal}
+        proyecto={proyecto}
+      />
     </div>
   );
 }
