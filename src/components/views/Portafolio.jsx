@@ -3,20 +3,21 @@ import { useState } from "react";
 import "../../assets/css/portafolio.css";
 import ModalPortafolio from "../../components/common/ModalPortafolio";
 import proyectos from "../../utils/portafolio.json";
+import imgProyectos from "../../utils/imagenPortafolio.json";
+import requestImageFile from "../../utils/requestImageFile";
 
 function Portafolio() {
   const [showModal, setShowModal] = useState(false);
   const [proyecto, setProyecto] = useState({ nombre: null });
+  const [imagenes, setImagenes] = useState([]);
 
   const handleShow = (id) => {
     setProyecto(proyectos.find((p) => p.id === id));
     setShowModal(true);
+    setImagenes(
+      imgProyectos.filter((i) => i.proyecto_id === id).map((i) => i.imagen)
+    );
   };
-
-  const requestImageFile = require.context(
-    "../../assets/images/portafolio",
-    true
-  );
 
   return (
     <div id="portafolio">
@@ -30,7 +31,7 @@ function Portafolio() {
               key={p.id}
             >
               <img
-                src={requestImageFile(`./${p.imagen}`).default}
+                src={requestImageFile(`./portafolio/${p.imagen}`).default}
                 alt=""
                 loading="lazy"
                 data-aos="zoom-in"
@@ -38,7 +39,7 @@ function Portafolio() {
               />
               <div className="text-image">
                 <h4>{p.nombre}</h4>
-                <h5>{p.descripcion}</h5>
+                <h5>{p.herramientas}</h5>
               </div>
             </div>
           );
@@ -48,6 +49,7 @@ function Portafolio() {
         showModal={showModal}
         setShowModal={setShowModal}
         proyecto={proyecto}
+        imagenes={imagenes}
       />
     </div>
   );

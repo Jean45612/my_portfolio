@@ -1,38 +1,44 @@
 [
   {
-    "id": "1",
+    "id": 1,
     "nombre": "Encuestas",
-    "descripcion": "Angular / Laravel",
-    "imagen": "encuestas/encuestas.PNG"
+    "herramientas": "Angular / Laravel",
+    "imagen": "encuestas/encuestas.PNG",
+    "descripcion": "Sistema web desarrollado con Angular para Front-end y Laravel para Back-end, permite generar encuestas y realizar sus respectivos reportes."
   },
   {
-    "id": "2",
+    "id": 2,
     "nombre": "Historia clínica",
-    "descripcion": "Laravel",
-    "imagen": "historia_clinica/paciente.PNG"
+    "herramientas": "Laravel",
+    "imagen": "historia_clinica/paciente.PNG",
+    "descripcion": "Sistema web desarrollado con Laravel, permite gestionar el proceso de historia clinica de pacientes."
   },
   {
-    "id": "3",
+    "id": 3,
     "nombre": "Sistema logístico",
-    "descripcion": "Vue / Laravel",
-    "imagen": "logistico/producto.PNG"
+    "herramientas": "Vue / Laravel",
+    "imagen": "logistico/producto.PNG",
+    "descripcion": "Sistema web desarrollado con Vue.Js para Front-end y Laravel para Back-end, permite gestionar el proceso logístico, controlar ingresos y salidas de mercadería."
   },
   {
-    "id": "4",
+    "id": 4,
     "nombre": "Tarjetas digitales",
-    "descripcion": "Angular / Laravel",
-    "imagen": "tarjetas/tar1.PNG"
+    "herramientas": "Angular / Laravel",
+    "imagen": "tarjetas/tar1.PNG",
+    "descripcion": "Sistema web desarrollado con Angular para Front-end y Laravel para Back-end, permite registrar información de personas para luego poder generar sus respectivas tarjetas digitales."
   },
   {
-    "id": "5",
+    "id": 5,
     "nombre": "Gestión de proyectos",
-    "descripcion": "Vue / Laravel",
-    "imagen": "proyectos/tarea.PNG"
+    "herramientas": "Vue / Laravel",
+    "imagen": "proyectos/tarea.PNG",
+    "descripcion": "Sistema web desarrollado con Vue.Js para Front-end y Laravel para Back-end, permite controlar los proyectos registrados, con sus respectivas fechas y tareas. "
   },
   {
-    "id": "6",
+    "id": 6,
     "nombre": "Pedidos",
-    "descripcion": "Angular / Laravel",
-    "imagen": "pedidos/pedido.PNG"
+    "herramientas": "Angular / Laravel",
+    "imagen": "pedidos/pedido.PNG",
+    "descripcion": "Sistema web desarrollado con Angular para Front-end y Laravel para Back-end, permite gestionar pedidos generados por clientes desde un aplicación móvil."
   }
 ]

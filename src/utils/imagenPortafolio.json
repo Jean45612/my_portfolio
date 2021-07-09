@@ -1,0 +1,50 @@
+[
+  {
+    "proyecto_id": 1,
+    "imagen": "encuestas/encuestas.PNG"
+  },
+  {
+    "proyecto_id": 2,
+    "imagen": "historia_clinica/reporte.PNG"
+  },
+  {
+    "proyecto_id": 2,
+    "imagen": "historia_clinica/paciente.PNG"
+  },
+  {
+    "proyecto_id": 3,
+    "imagen": "logistico/producto.PNG"
+  },
+  {
+    "proyecto_id": 3,
+    "imagen": "logistico/kardex.PNG"
+  },
+  {
+    "proyecto_id": 3,
+    "imagen": "logistico/salida.PNG"
+  },
+  {
+    "proyecto_id": 4,
+    "imagen": "tarjetas/tar1.PNG"
+  },
+  {
+    "proyecto_id": 4,
+    "imagen": "tarjetas/editar.PNG"
+  },
+  {
+    "proyecto_id": 5,
+    "imagen": "proyectos/listado.PNG"
+  },
+  {
+    "proyecto_id": 5,
+    "imagen": "proyectos/tarea.PNG"
+  },
+  {
+    "proyecto_id": 6,
+    "imagen": "pedidos/pedido.PNG"
+  },
+  {
+    "proyecto_id": 6,
+    "imagen": "pedidos/detalle.PNG"
+  }
+]
