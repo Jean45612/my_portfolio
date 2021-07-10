@@ -3,8 +3,8 @@
 :root {
   /* AQUI ESTOY USANDO VARIABLES CSS*/
   --fondo-negro-humo: #1a1a1a;
-  --blanco-secundario: #F5F5F5;
-  --celeste-portafolio: rgba(0,184, 191, 0.5); 
+  --blanco-secundario: #f5f5f5;
+  --celeste-portafolio: rgba(0, 184, 191, 0.5);
 }
 
 * {
@@ -53,6 +53,21 @@ body {
 .header-nav a:hover {
   cursor: pointer;
   text-decoration: none;
+}
+
+#contactame .derechos {
+  padding: 1rem 0px;
+  color: white;
+  text-align: center;
+}
+
+#contactame .derechos p {
+  font-size: 0.875rem;
+  margin-bottom: 0;
+}
+
+#contactame .derechos span {
+  font-size: 0.8125rem;
 }
 
 @keyframes fall {
