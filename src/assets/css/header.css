@@ -30,7 +30,7 @@
   left: 0;
   background: black;
   z-index: 1;
-  opacity: 50%;
+  opacity: 0.5;
 }
 
 .v-header .header-content {
