@@ -41,14 +41,15 @@ const Acerca = () => {
         <div className="col-md-7" data-aos="fade-right">
           <h2 className="text-center">Hola, mi nombre es Jean Pierre Acosta</h2>
           <p className="text-justify">
-            Soy egresado de la carrera de Ingeniería de Sistemas en la
-            Universidad César Vallejo.
+            Ingeniero de Sistemas autodidacta y con muchas ganas de superación.
           </p>
           <p className="text-justify">
             Me especializo en el desarrollo web front-end, me gusta mantenerme
             actualizado con respecto a las últimas tendencias tecnológicas en el
-            campo del desarrollo web. Trabajo con frameworks tales como Vue.Js,
-            Angular, React y Laravel.
+            campo del desarrollo web. Trabajo con JavaScript y frameworks tales
+            como Vue.Js, Angular, React y Laravel. Además algunas de las
+            habilidades demostradas en este portafolio incluyen Flexbox,
+            Bootstrap.
           </p>
 
           <h4 className="text-center">Habilidades tecnológicas</h4>
