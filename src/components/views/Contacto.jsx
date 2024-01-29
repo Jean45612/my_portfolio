@@ -136,8 +136,9 @@ function Contacto() {
       </div>
 
       <div className="derechos">
-        <p>Desarrollado y diseñado por Jean Pierre Acosta Tomaylla</p>
-        <span> ©2021. Todos los derechos reservados.</span>
+        <p>Desarrollado por Jean Pierre Acosta Tomaylla</p>
+        <p>Diseñado por Kiara Benites Tesén</p>
+        <span> ©2024. Todos los derechos reservados.</span>
       </div>
     </div>
   );
