@@ -1,1 +1,74 @@
-<!doctype html><html lang="es"><head><meta charset="utf-8"/><link rel="icon" href="/my_portfolio/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Portafolio de Jean Pierre Acosta Tomaylla desarrollado con React."/><title>Jean Pierre Acosta Tomaylla | Portafolio</title><link href="/my_portfolio/static/css/2.e4e35064.chunk.css" rel="stylesheet"><link href="/my_portfolio/static/css/main.a7e4d2b8.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script>!function(e){function r(r){for(var n,l,f=r[0],i=r[1],p=r[2],c=0,s=[];c<f.length;c++)l=f[c],Object.prototype.hasOwnProperty.call(o,l)&&o[l]&&s.push(o[l][0]),o[l]=0;for(n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n]);for(a&&a(r);s.length;)s.shift()();return u.push.apply(u,p||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,f=1;f<t.length;f++){var i=t[f];0!==o[i]&&(n=!1)}n&&(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={1:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/my_portfolio/";var f=this.webpackJsonpportafolio=this.webpackJsonpportafolio||[],i=f.push.bind(f);f.push=r,f=f.slice();for(var p=0;p<f.length;p++)r(f[p]);var a=i;t()}([])</script><script src="/my_portfolio/static/js/2.50795e25.chunk.js"></script><script src="/my_portfolio/static/js/main.9e3d959c.chunk.js"></script></body></html>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="/my_portfolio/favicon.ico" />
+    <meta name="theme-color" content="#07080c" />
+
+    <title>Jean Pierre Acosta | Senior Frontend Engineer</title>
+    <meta
+      name="description"
+      content="Senior Frontend Engineer con 6 años de experiencia. Angular 17+, TypeScript y RxJS para banca (BCP) y fintech."
+    />
+    <meta name="author" content="Jean Pierre Acosta Tomaylla" />
+    <link rel="canonical" href="https://jean45612.github.io/my_portfolio/" />
+    <link rel="alternate" hreflang="es" href="https://jean45612.github.io/my_portfolio/" />
+    <link rel="alternate" hreflang="en" href="https://jean45612.github.io/my_portfolio/?lang=en" />
+
+    <meta property="og:type" content="profile" />
+    <meta property="og:title" content="Jean Pierre Acosta | Senior Frontend Engineer" />
+    <meta
+      property="og:description"
+      content="Angular 17+, TypeScript y RxJS para banca y fintech. 6 años construyendo productos digitales."
+    />
+    <meta property="og:url" content="https://jean45612.github.io/my_portfolio/" />
+    <meta name="twitter:card" content="summary" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Jean Pierre Acosta Tomaylla",
+        "jobTitle": "Senior Frontend Engineer",
+        "address": { "@type": "PostalAddress", "addressLocality": "Lima", "addressCountry": "PE" },
+        "email": "mailto:jpacostatomaylla@gmail.com",
+        "url": "https://jean45612.github.io/my_portfolio/",
+        "sameAs": ["https://www.linkedin.com/in/jp-acosta", "https://github.com/Jean45612"],
+        "knowsAbout": ["Angular", "TypeScript", "RxJS", "React", "Frontend Architecture"]
+      }
+    </script>
+
+    <!-- Aplica tema e idioma antes del primer pintado para evitar parpadeos -->
+    <script>
+      (function () {
+        try {
+          var root = document.documentElement;
+          var theme = localStorage.getItem("theme");
+          if (theme !== "light" && theme !== "dark") {
+            theme = matchMedia("(prefers-color-scheme: light)").matches ? "light" : "dark";
+          }
+          root.dataset.theme = theme;
+          var lang = new URLSearchParams(location.search).get("lang") || localStorage.getItem("lang");
+          if (lang !== "es" && lang !== "en") {
+            lang = (navigator.language || "es").toLowerCase().startsWith("es") ? "es" : "en";
+          }
+          root.lang = lang;
+        } catch (e) {}
+      })();
+    </script>
+    <script type="module" crossorigin src="/my_portfolio/assets/index-lHYPWmft.js"></script>
+    <link rel="stylesheet" crossorigin href="/my_portfolio/assets/index-ChXW--Pe.css">
+  </head>
+  <body>
+    <noscript>Activa JavaScript para ver este sitio. / Please enable JavaScript to view this site.</noscript>
+    <div id="root"></div>
+  </body>
+</html>
