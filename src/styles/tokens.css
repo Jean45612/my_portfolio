@@ -1,0 +1,90 @@
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+:root {
+  /* Tipografía */
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Space Grotesk", var(--font-sans);
+  --font-mono: "JetBrains Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
+
+  /* Escala fluida */
+  --fs-xs: 0.78rem;
+  --fs-sm: 0.9rem;
+  --fs-base: 1rem;
+  --fs-md: clamp(1.05rem, 0.98rem + 0.3vw, 1.2rem);
+  --fs-lg: clamp(1.25rem, 1.1rem + 0.6vw, 1.6rem);
+  --fs-xl: clamp(2rem, 1.4rem + 2.6vw, 3.4rem);
+  --fs-hero: clamp(2.8rem, 1.2rem + 7vw, 7.2rem);
+
+  /* Espaciado y forma */
+  --container: 1200px;
+  --gutter: clamp(1rem, 4vw, 2rem);
+  --section-y: clamp(5rem, 10vw, 9rem);
+  --radius-sm: 10px;
+  --radius: 18px;
+  --radius-lg: 28px;
+
+  /* Movimiento */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Paleta (tema oscuro por defecto) */
+  --bg: #07080c;
+  --bg-soft: #0b0d13;
+  --surface: rgba(255, 255, 255, 0.035);
+  --surface-strong: #10131b;
+  --border: rgba(255, 255, 255, 0.08);
+  --border-strong: rgba(255, 255, 255, 0.16);
+  --text: #eceef4;
+  --text-muted: #9aa1b4;
+  --text-faint: #646b7e;
+
+  --violet: #8b7bff;
+  --cyan: #22d3ee;
+  --mint: #34d399;
+  --pink: #f472b6;
+  --accent: var(--violet);
+  --gradient: linear-gradient(120deg, var(--violet) 0%, var(--cyan) 50%, var(--mint) 100%);
+  --glow: rgba(139, 123, 255, 0.35);
+  --spot: rgba(139, 123, 255, 0.14);
+
+  --aurora-1: rgba(124, 92, 255, 0.55);
+  --aurora-2: rgba(34, 211, 238, 0.35);
+  --aurora-3: rgba(244, 114, 182, 0.28);
+
+  --shadow: 0 30px 60px -20px rgba(0, 0, 0, 0.6), 0 0 0 1px var(--border);
+  --code-bg: rgba(13, 15, 22, 0.78);
+
+  color-scheme: dark;
+}
+
+:root[data-theme="light"] {
+  --bg: #f6f7fb;
+  --bg-soft: #eef0f6;
+  --surface: rgba(255, 255, 255, 0.7);
+  --surface-strong: #ffffff;
+  --border: rgba(12, 15, 26, 0.09);
+  --border-strong: rgba(12, 15, 26, 0.18);
+  --text: #0c0f1a;
+  --text-muted: #4e5568;
+  --text-faint: #8a90a0;
+
+  --violet: #6247ff;
+  --cyan: #0891b2;
+  --mint: #059669;
+  --glow: rgba(98, 71, 255, 0.25);
+  --spot: rgba(98, 71, 255, 0.1);
+
+  --aurora-1: rgba(124, 92, 255, 0.35);
+  --aurora-2: rgba(34, 211, 238, 0.3);
+  --aurora-3: rgba(244, 114, 182, 0.22);
+
+  --shadow: 0 30px 60px -25px rgba(30, 30, 60, 0.25), 0 0 0 1px var(--border);
+  --code-bg: rgba(16, 18, 28, 0.92);
+
+  color-scheme: light;
+}
